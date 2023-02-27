@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.start-btn {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  -webkit-box-shadow: 2px -1px 26px -1px rgba(255, 0, 0, 0.64);
+  -moz-box-shadow: 2px -1px 26px -1px rgba(255, 0, 0, 0.64);
+  box-shadow: 2px -1px 26px -1px rgba(255, 0, 0, 0.64);
+}
+
+.shutdown-btn:hover {
+  background-color: rgb(231, 4, 4);
+}
+
+.load-icon {
+  filter: invert(1);
+  width: 300px;
+  height: 300px;
+  animation: 1.5s infinite rotate;
+}
+
+.load {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load-title {
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-size: 25px;
+}
+
+.os-name {
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-size: 50px;
+}
+
+.console_log1 {
+  display: none;
+}
+.console_log2 {
+  display: none;
+}
+.console_log3 {
+  display: none;
+}
